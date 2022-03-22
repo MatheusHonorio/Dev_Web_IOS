@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 07</title>
+</head>
+
+<body>
+    
+    <header>
+        <h2>Elementos de Formulario</h2>
+        <nav>
+            <ul>
+                <!--CTRL+SHIFT+P Selecionar o conteudo, Digitar ABBR, selicionar opção EMMET e logo após o comando-->
+                <li><a href=""> input e label</a> </li>
+                <li><a href="">checkbox e radio</a></li>
+                <li><a href=""> select e datalist</a></li>
+                <li><a href=""> textarea</a> </li>
+                <li><a href=""> fieldset e legend</a> </li>
+                <li> <a href="">Atributo action do elemento form e elemento output</a> <br>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <fieldset>
+            <!--Legend- especificar coisas-->
+            <legend>Formulario!</legend>
+        <p>Tenho muito interesse para a area tecnologica, porém, programação está me deixando ainda mais com esta
+            vontade de aprender mais sobre a area. Tenho diculdade para aprender na parte teórica, mas na prática tenho
+            muito mais facilidade.</p>
+
+            <form method="post" action="http://ios.org.br/" name="Churrasco">
+                <label for="cTipoCarne">Tipos de Carne </label>
+                <input type="text" name="Espetinho" size="30" maxlength="150" autofocus required="required" id="cTipoCarne"  placeholder="*">
+            <!--Radio only one with "name"-->
+            <h2>Cores favoritas (Escolha somente uma) </h2>
+            <input type="radio" id="cCorAzul" name="Jorge" value="Azul" >Azul
+            <label for="cCorAzul" name="Jorge"></label>
+            <input type="radio" name="Jorge" id="cCorVerde" value="Verde">Verde
+            <label for="cCorVerde" name="Jorge"  ></label>
+            <input type="radio" name="Jorge" id="cCorAmarelo" value="Amarelo">Amarelo
+            <label for="cCorVerde" name="Jorge" ></label>
+            <input type="radio" name="Jorge" id="cCorVermelho" value="Vermelho">Vermelho
+            <label for="cCorVermelho" name="Jorge" ></label>
+            <br>
+            <h2>Escolha diversas opções</h2>
+            <input type="checkbox" id="cCorAzul" value="Azul">Azul
+            <label for="cCorAzul" ></label>
+            <input type="checkbox" id="cCorVerde" value="Verde">Verde
+            <label for="cCorVerde"></label>
+            <input type="checkbox" id="cCorAmarelo" value="Amarelo">Amarelo
+            <label for="cCorAmarelo"></label>
+            <input type="checkbox" id="cCorVermelho" value="Vermelho">Vermelho
+            <label for="cCorVermelho"></label>
+            <h2>Qual o melhor time?</h2>
+            <!--Select lista suspensa-->
+            <select name="time" id="melhorTime">
+                <option value="corinthians"> Corinthians </option>
+                <option value="saoPaulo"> São Paulo </option>
+                <option value="palmeiras"> Palmeiras </option>
+                <option value="santos"> Santos</option>
+            </select>
+            <br>
+            <h3>Quantas pessoas vivem na sua casa?</h3>
+            0
+                <input type="range" list="valor_01" min="1" max="10">
+            30
+            <!--Datalist serve para lista pré-definida-->
+            <datalist id="valor_01">
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+                <option value="4"></option>
+                <option value="5"></option>
+                <option value="6"></option>
+                <option value="7"></option>
+                <option value="8"></option>
+                <option value="9"></option>
+                <option value="10"></option>
+
+            </datalist>
+            <br>
+
+            <footer>
+            <h3>
+                <textarea name="" id="" cols="25" rows="10" placeholder="Deixe aqui seu feedback!"></textarea>
+            </h3>
+            <input type="submit" name="Enviar">
+        </footer>
+    </fieldset>
+    </form>
+            <!--textarea seria para um meio de feedback, chat, coisas do tipo; Placerolder seria para colocar um texto dentro de uma linha para indicar algo-->
+            <!--datalist lista pré definida-->
+            <!--tag range seria para colocar um "barra" com uma quantidade expecifica-->
+
+            
+    </main>
+
+    <!--Action- Ação-->
+</body>
+
+</html>
