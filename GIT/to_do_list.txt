@@ -1,0 +1,5 @@
+1) Testar comandos Git
+2) Testar arquivo ;gitignore
+3) Vincular com repositorio remoto
+4)Mostrar site Git Bucket
+5) Testar Comando git Clone
