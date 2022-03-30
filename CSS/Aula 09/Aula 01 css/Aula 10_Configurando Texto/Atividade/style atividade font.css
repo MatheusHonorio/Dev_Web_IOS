@@ -1,0 +1,16 @@
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+h1 {
+  line-height: 200%;
+  text-shadow: 3px 3px 5px #26074e;
+  text-align: center;
+}
+ul {
+  font-weight: bold;
+}
+p {
+  font-size: 1.0em;
+  text-indent: 3em;
+  font-style: italic;
+}
