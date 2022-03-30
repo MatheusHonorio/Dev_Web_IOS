@@ -1,0 +1,26 @@
+h1 {
+  background-color: DodgerBlue;
+  color: #e6e6fa;
+  line-height: 200%;
+  text-shadow: 3px 3px 5px #cccccc;
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: bold;
+}
+body {
+  background-color: LightSkyBlue;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #f1f6ce;
+}
+ul.corTexto {
+  font-weight: bold;
+  color: bisque;
+font-size: 1.1em;
+}
+h2.fundo {
+  background-color: RoyalBlue;
+  text-align: center;
+  font-weight: bold;
+}
+.texto {text-align: center;
+    font-weight: bold;}
