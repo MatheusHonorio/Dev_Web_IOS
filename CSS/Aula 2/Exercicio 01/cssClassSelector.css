@@ -24,3 +24,7 @@ h2.fundo {
 }
 .texto {text-align: center;
     font-weight: bold;}
+
+div.conteiner {display:block;
+margin:auto ;
+width: 50%;}
