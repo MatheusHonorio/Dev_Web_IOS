@@ -1,0 +1,28 @@
+@charset "utf-8";
+p.esquecer {
+  color: #095169;
+}
+
+#esquecer2 {
+  color: #a3c68c;
+}
+
+* {
+  background-color: #340735;
+  font-family: fantasy;
+}
+
+#fundo {
+  background-color: #879676;
+}
+
+#fundo2 {
+  background-color: #6e6662;
+  
+}
+
+section p {
+  color: #4f364a;
+  background-color: #a3c68c;
+  font-style: italic;
+}

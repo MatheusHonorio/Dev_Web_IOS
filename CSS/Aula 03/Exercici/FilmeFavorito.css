@@ -1,0 +1,31 @@
+@charset "utf-8";
+* {
+  background-color: #feedbf;
+  font-family: fantasy;
+}
+
+#fundo {
+  background-color: #ce7095;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#fundo2 {
+  background-color: #626970;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#fundo3 {
+  background-color: #4f364a;
+  font-family: "cursive";
+}
+h1 {
+  text-align: center;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 100px;
+}
+* {
+  font-size: 25px;
+}
+
+small {font-size: 10.00;}
