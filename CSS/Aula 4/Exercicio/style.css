@@ -1,0 +1,21 @@
+h1 {background-color : rgba(127, 255, 212, 0.165);
+  color: hotpink;
+  line-height: 200%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-shadow: 3px 3px 5px #cccccc;
+  padding: 1em;
+ }
+
+  body {
+    background-image: url(imagem\ 2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: hotpink;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+
+.alinhamentoeCor {text-align: center;
+background-color: rgba(127, 255, 212, 0.461) ;}

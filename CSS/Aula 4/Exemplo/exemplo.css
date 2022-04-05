@@ -1,0 +1,4 @@
+@charset "UTF-8";
+.borda {border-width: 3px;
+border-style: dashed;
+border-color: aqua;}
