@@ -1,16 +1,17 @@
 h1 {background-color : rgba(127, 255, 212, 0.165);
-  color: hotpink;
+  color: deeppink;
   line-height: 200%;
   font-family: Georgia, "Times New Roman", Times, serif;
   text-shadow: 3px 3px 5px #cccccc;
   padding: 1em;
+ 
  }
 
   body {
-    background-image: url(imagem\ 2.jpg);
+    background-image: url(goiabada.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    color: hotpink;
+    color: rgb(202, 162, 209);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-left: auto;
     margin-right: auto;
@@ -19,3 +20,28 @@ h1 {background-color : rgba(127, 255, 212, 0.165);
 
 .alinhamentoeCor {text-align: center;
 background-color: rgba(127, 255, 212, 0.461) ;}
+
+figure {width: 620px;
+padding: 5px;
+border: 2px solid turquoise;
+text-align: center;
+
+}
+
+img {width: 620px; 
+height: 340px;
+margin}
+
+footer {text-align: center;}
+
+ h2, h3 {text-align: center;
+  line-height: 100%;
+  color: hotpink;
+font-family: fantasy;}
+
+  .corLista {color: yellow;}
+
+  a {margin: 500px;}
+
+  section {margin-left: 400px;
+  text-decoration: transparent;}
