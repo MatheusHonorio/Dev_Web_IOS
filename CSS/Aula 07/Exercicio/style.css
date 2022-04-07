@@ -1,0 +1,70 @@
+@charset "utf-8";
+* {
+ margin: 0;
+ padding: 0;
+}
+
+body {
+  background-color: #c92f00;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 17px;
+  color: #b67804;
+  line-height: 1.6em;
+  text-align: center;
+}
+
+#cabeçalho {
+  background-image: url("outlast.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  
+  padding: 0 20px;
+}
+
+#cabeçalho h1 { font-size: 70px;
+    line-height: 1.2em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 40px;
+    text-shadow: 3px 3px 5px #cccccc;
+    color: #8C162A;
+    text-align: center;
+    background: #ae9393;
+    margin-left: -25px;
+    margin-right: -25px;
+   }
+
+   #cabeçalho article { margin-top: 100px; 
+   }
+   #cabeçalho p {
+    font-size: 20px;
+    margin-bottom: 20px;
+   }
+   #cabeçalho .btn {
+    font-size: 18px;
+    text-decoration: none;
+    color: #fdfdfd;
+    border: #9e0f0f 1px solid;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    
+    
+   }
+   #rodapé {
+    padding: 20px;
+    background: #ae9393;
+    color: rgb(200, 90, 0);
+    text-align: center;
+    
+   }
+      
+   h2 {margin-top: 30px;
+    color: #8C162A;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.2em;
+    font-size: 30px;
+}
+
+    small {color: aquamarine;}

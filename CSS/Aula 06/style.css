@@ -1,0 +1,49 @@
+body {
+  background-image: url(dark\ souls.png);
+  line-height: 1.6em;
+  margin: 10;
+  color: azure;
+  background-repeat: no-repeat;
+  background-size: cover;
+    background-position: center;
+}
+
+h1 {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: brown;
+  
+  font-weight: 10;
+  font-size: 50px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+ 
+}
+
+* {
+  margin: 0px 10px 10px 10px;
+  padding: 10px;
+  border: none;
+  top: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+li {
+  text-size-adjust: 2px;
+}
+
+ol {
+  border: 2in;
+}
+
+h2 {
+  font-weight: 100;
+  font-size: 15px;
+  background-color: rgba(255, 255, 255, 0.333);
+  border-style: groove;
+}
+
+.dark {color: palevioletred;}
