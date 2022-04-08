@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.img1 {
+  float: left;
+}
+.divisao {
+  margin-top: 30%;
+ ;
+}
+
+.pg {
+  clear: none;
+}
+
+.img2 {float: right;}
+
+.img3 {float: left;}
