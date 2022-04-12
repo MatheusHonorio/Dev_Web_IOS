@@ -1,0 +1,45 @@
+p::selection {
+    color: white;
+    background-color: greenyellow;
+  }
+
+  p::first-letter {
+    font-size: 200%;
+    background-color: palegreen;
+    }
+
+    h3 {text-align: center;
+    font-size: 150%;
+background-color: aquamarine;
+color: coral;}
+
+img:focus {}
+
+img {width: 460px;
+height: 240px;}
+
+.mylist li:nth-child(1) {
+    background: green
+  }
+  .mylist li:nth-child(4) {
+    background: green
+  }
+  .mylist li:nth-child(6) {
+    background: green
+  }
+  .mylist li:nth-child(8) {
+    background: green
+  }
+
+  a:hover {background-color: green;}
+
+::selection {
+    color: white;
+    background-color: red;
+  }
+
+  .img2 {width: 260px;
+    height: 140px;}
+
+    a {text-decoration: none;
+    color: black;}
