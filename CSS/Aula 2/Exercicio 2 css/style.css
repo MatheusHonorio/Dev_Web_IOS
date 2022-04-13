@@ -1,0 +1,50 @@
+#header1 {
+  text-align: center;
+}
+
+h1,
+h2 {
+  text-align: center;
+  font-weight: 600;
+  color: green;
+  font-weight: bold;
+  background-color: springgreen;
+}
+
+header {
+  background-color: greenyellow;
+}
+body {
+  background-color: gray;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#dados {
+  background-color: darkkhaki;
+  text-align: center;
+}
+
+#espessura {
+  background-color: springgreen;
+  font-weight: 600;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#coppy {
+  font-size: small;
+  text-align: center;
+  background-color: azure;
+}
+
+#borda {
+  background-color: azure;
+}
+
+div.conteiner {
+  width: 100%;
+}
+
+.img { clip-path: circle();}

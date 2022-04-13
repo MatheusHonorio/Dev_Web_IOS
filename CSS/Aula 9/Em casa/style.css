@@ -1,1 +1,89 @@
-* {background-image: url(Eren.png);}
+body {
+  background-image: url(Eren.png);
+  color: seagreen;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    margin: auto;
+}
+
+header {
+  background-image: url(eren\ fundo\ header.jpg);
+  background-size: 50%;
+  padding: 4%;
+  background-position: center;
+  margin: 5%;
+  border: 3px sienna solid;
+}
+
+h1 {
+  text-align: center;
+  background: fixed;
+  color: green;
+  line-height: 200%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-shadow: 3px 3px 5px #cccccc;
+  padding: 1px;
+}
+
+.principal {
+  background-color: rgba(240, 248, 255, 0.224);
+  border: 6px groove sienna;
+  padding: 6rem;
+  margin: 2rem;
+}
+
+h2 {
+  text-align: center;
+  line-height: 100%;
+}
+
+p::first-letter {
+  color: chocolate;
+  font-size: 200%;
+}
+
+.meio {
+  background-color: rgba(240, 248, 255, 0.364);
+  padding: 3rem;
+  margin: 2rem;
+  border: 6px groove sienna;
+}
+
+iframe {
+  border: 1px solid green; 
+  float: left;
+  margin-right: 100px;
+  width: 30%;
+}
+
+.img1 {
+  border: 1px solid green;
+  width: 25%;
+  float: left;
+  margin-right: 5%;
+}
+
+main {display: flex;
+flex-grow: 1;
+flex-direction: column;}
+
+.final {
+  background-color: rgba(240, 248, 255, 0.364);
+  padding: auto;
+  margin: auto;
+  border: 6px groove sienna;
+}
+
+h3 {
+  text-align: center;
+  line-height: 50%;
+}
+
+.img2 {border: 1px solid green;
+  margin-right: 5%;}
+
+
+footer {text-align: center;}
+
+a:hover {
+  opacity: 0.5;}
