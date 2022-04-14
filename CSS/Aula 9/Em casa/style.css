@@ -3,7 +3,7 @@ body {
   color: seagreen;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    margin: auto;
+  margin: auto;
 }
 
 header {
@@ -50,7 +50,7 @@ p::first-letter {
 }
 
 iframe {
-  border: 1px solid green; 
+  border: 1px solid green;
   float: left;
   margin-right: 100px;
   width: 30%;
@@ -63,9 +63,11 @@ iframe {
   margin-right: 5%;
 }
 
-main {display: flex;
-flex-grow: 1;
-flex-direction: column;}
+main {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
 
 .final {
   background-color: rgba(240, 248, 255, 0.364);
@@ -79,11 +81,41 @@ h3 {
   line-height: 50%;
 }
 
-.img2 {border: 1px solid green;
-  margin-right: 5%;}
+.img2 {
+  border: 3px solid dimgrey;
+  margin-left: 40%;
+}
 
-
-footer {text-align: center;}
+footer {
+  text-align: center;
+  background-color: aliceblue;
+  opacity: 0.4;
+  border: 3px solid greenyellow;
+  margin: 30px; 
+}
 
 a:hover {
-  opacity: 0.5;}
+  opacity: 0.5;
+  text-decoration: none;
+  color: saddlebrown;
+  background-color: aliceblue;
+  border: 3px solid saddlebrown;
+}
+
+::selection {
+  color: aliceblue;
+  background-color: darkgreen;
+}
+
+h3::first-letter {
+  color: saddlebrown;
+  font-size: 70%;
+}
+
+small::before {
+  content: " © ";
+}
+
+.img2:hover {
+  opacity: 0.5;
+}
