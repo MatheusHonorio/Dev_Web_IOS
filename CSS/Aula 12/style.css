@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: tomato;
+}
+
+.container {
+  display: grid;
+  background-color: violet;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  justify-items: center;
+}
+
+.item1 {
+  background-color: azure;
+  width: 200px;
+  height: 200px;
+  justify-items: right;
+}
+
+.item2 {
+  background-color: blueviolet;
+  width: 200px;
+  height: 200px;
+  justify-items: end;
+}
+
+.item3 {
+  background-color: burlywood;
+  width: 200px;
+  height: 200px;
+}

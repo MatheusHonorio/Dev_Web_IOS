@@ -51,3 +51,9 @@ font-size: 250%;
 color: tomato;}
 
 footer {text-align: center;}
+
+@media(max-width:768px) {
+    .col2 {
+    width: 100%;
+    }
+   }

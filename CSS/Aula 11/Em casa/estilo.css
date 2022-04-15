@@ -28,7 +28,7 @@ h1 {
   align-items: flex-start;
 }
 .item-box-1 {
-  flex: 2;
+  flex: 3;
   order: 2;
   align-self: flex-end;
 }
@@ -42,7 +42,7 @@ h1 {
 }
 .item-box-4 {
   flex: 1;
-  order: 4;
+  order: 5;
 }
 
 img {
