@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(Fundo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: darkorange;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    background-color: rgba(0, 0, 0, 0.507);
+    text-decoration: none;
+    margin-right: 15px;
+    color: white;
+    border: 3px solid greenyellow;
+    padding: 10px;
+    border-radius: 10px;
+    text-shadow: 1px 1px 3px;
+}
+header{
+    text-align: center;
+    background-image: url(cabeçalho.jpg);
+    background-position: center;
+    background-size: 70%;
+    margin: 1rem;
+    padding: 1rem;
+    border-style: groove;
+    color: aliceblue;
+    text-shadow: 1px 1px 3px;
+}
+header img {
+    float: inline-start;
+    width: 5%;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    text-align: center;
+}
+
+.filme1 {
+    font-size: medium;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: rgba(68, 73, 59, 0.315);
+    border: 1px solid greenyellow;
+    border-radius: 12px;
+}
+
+.lista {
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: rgba(56, 61, 49, 0.438);
+    font-size: medium;
+    border: 1px solid greenyellow;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.img2 {
+    float: left;
+}
+
+.img3 {
+    float: right;
+}
+
+figure img {
+    height: 400px;
+}
+
+figure figcaption {
+    font-size: 1.0rem;
+    font-weight: 600;
+    color: white;
+    font-style: oblique;
+}
+footer{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.26);
+    font-size: small;
+}
+h1{
+    font-style: italic;
+    background-color: rgba(0, 0, 0, 0.664);
+}
+.veloz6{
+    flex-direction: column;
+    justify-content: right;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 19%;
+    margin-right: 2%;
+}
+
+footer p {font-size: small;
+}

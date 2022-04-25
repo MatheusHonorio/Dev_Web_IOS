@@ -1,0 +1,135 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+
+body {
+    font-size: 1.3rem;
+    background-color: deepskyblue;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow: overlay;
+
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(150, 150, 150);
+}
+
+header {
+    height: 50vh;
+    padding: 2rem;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(fundo\ a\ erado\ gelo.jpg);;
+    color: aqua;
+}
+
+header h1{
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    line-height: 1.2rem;
+}
+
+header h3 {
+    font-style: oblique;
+    color: tomato;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    overflow: auto;
+    padding: 0 2rem;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    background: blue ;
+    margin-bottom: 1.5rem;
+    border: 2px blueviolet groove;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.card img {
+    height: 400px;
+}
+
+.card > div {
+    padding: 2rem;
+}
+
+.card:nth-child(odd) img {
+    order: 2;
+}
+
+.sCard {
+    display: grid;
+    grid-template-columns: 1fr .49fr 1fr;
+    grid-template-rows: auto;
+    grid-auto-flow: row;
+    height: fit-content;
+}
+.diego {color: gold;}
+
+.shira {color: whitesmoke;}
+
+.sid {color: springgreen;}
+
+.img1 {
+    grid-column: 1;
+}
+
+.text {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+}
+
+.img2 {
+    grid-column: 3;
+}
+
+span {
+    font-weight: bold;
+}
+
+footer {
+    background-image: url(footer.jpg);
+    background-size: auto;
+    background-attachment: fixed;
+    font-size: smaller;
+}
+
+footer p {
+    text-align: center;
+}
+
