@@ -27,9 +27,7 @@ console.log(`Acessa o segundo elemento: ${matrix[0][1]}`);
 console.log(matrix);
 
 // Alterando um valor do array
-console.clear();
-matrix[0][2] = -10;
-console.log("Depois:");
+matrix [0][2] = -10;
 console.log(matrix);
 
 //Métodos em Arrays
