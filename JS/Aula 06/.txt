@@ -1,0 +1,26 @@
+Questão 1
+ Resposta :f) Yara mora no 4º andar e tem um cachorro.
+
+
+ Questão 2
+
+ P or Q     P and Q       P not 
+   v           v            f
+   v           f            f
+   v           f            v
+   f           f            v
+
+Questão 3
+Resposta: O gato está no sótão e o rato está no quarto 
+
+Questão 4
+Resposta:
+
+
+1                2                     3         4                
+gato             passaros        cachorro       peixe 
+raquel           vivian          Bruna           Sara
+suco de laranja  Suco limonada   Suco maracuja  suco de morango
+11 anos          7 anos          9 anos         8 anos
+FPS45            FPS 55          FPS 40         FPS 50  
+maio branco      maio azul       maio amarelo     maio verde
