@@ -62,3 +62,5 @@ console.log(string12.lastIndexOf('um'));
 console.log(string12.search('é'));
 //startsWith
 console.log(string12.startsWith('A'));
+//endsWith
+console.log(string12.endsWith('m'));
