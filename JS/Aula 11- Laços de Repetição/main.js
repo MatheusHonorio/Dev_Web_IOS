@@ -40,7 +40,7 @@ let profHelo = 1;
 //   console.log (`Olá Zapzip ${Zipzap}`)
 // }
 
-//Laços de repetição e Array
+//Laços de repetição e Arrayt
 // const frutas = ["maca", "laranja", "pera", 10];
 
 // for (let j = 0; j < frutas.length; j++) {
