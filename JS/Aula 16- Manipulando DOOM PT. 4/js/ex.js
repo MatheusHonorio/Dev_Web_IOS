@@ -2,11 +2,18 @@
 const btn = document.querySelector(".btn");
 btn.style.background = "red";
 
+//Adição da Idade
+const data = new Date();   
+const dia = data.getDate();   
+const mes = data.getMonth();  
+const ano4 = data.getFullYear();   
+const str_data = dia + '/' + (mes + 1) + '/' + ano4;   
+
 // Adicionando elementos
 const myForm = document.querySelector("#my-form");
 const nameInput = document.querySelector("#name");
 const emailInput = document.querySelector("#email");
-const idadeInput = document.querySelector("#idade");
+const idadeInput = document.querySelector("#idadeA");
 const maiorOuMenor = document.querySelector("#maiorOuMenor");
 const msg_email = document.querySelector(".msg_email");
 const userList = document.querySelector("#users");
@@ -54,12 +61,23 @@ emailInput.addEventListener("change", (e) => {
   });
 
   // Validando idade
-idadeInput.addEventListener("change", (e) => {
-  let padrao1 = new RegExp(/.*01*01*2004*/i);
-  if (!padrao1.test(idadeInput.value)) {
-    // alert('Por favor, insira um e-mail válido.');
-    msg_idade.classList.add("error");
-    msg_idade.innerHTML = "Apenas Maiores de 18 anos.";
-    setTimeout(() => msg_idade.remove(), 3000);
+  function onAdd(e) {
+    e.preventDefault();
+    if (!confirmandoIdade()) { 
+        return
   }
-});
+};
+
+function confirmandoIdade() {
+  let age = new Date(idadeInput.value)
+  let idade = data.getFullYear() - age.getFullYear();
+  if (data.getMonth() < age.getMonth()) idade--;
+  else if (data.getMonth() == age.getMonth() && data.getDate() < age.getDate() + 1) idade--;
+
+  // Validando a idade
+  if (idade < 18) {
+      alert('Você é menor de idade.\nEsse site é só para maiores de 18 anos');
+      return false;
+  }
+  return true;
+}
