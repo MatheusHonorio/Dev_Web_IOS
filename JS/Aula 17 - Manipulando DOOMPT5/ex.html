@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="#" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-
 +0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
@@ -31,33 +32,37 @@
                 <div class="row">
                     <div class="col-4">
                         <label for="item">Item</label>
-                        <input type="text" class="form-control mr-2" id="item" />
+                        <input type="text" class="form-control mr-2" id="addItem" />
                     </div>
                     <div class="col-2">
                         <label for="amount">Quantidade</label>
-                        <input type="number" id="amount" class="form-control">
+                        <input type="number" id="addAmount" class="form-control">
                     </div>
                     <div class="col-2">
                         <label for="value">Valor</label>
-                        <input type="text" class="form-control" id="value">
+                        <input type="text" class="form-control" id="addValue">
                     </div>
                     <div class="col-2">
-                        <input type="submit" class="form-control btn btn-dark" value="Add" id="addItems"/>
+                        <input type="submit" class="form-control btn btn-dark" value="Add" id="Items"/>
                     </div>
                 </div>
             </form>
             <h2 class="title">Minha lista</h2>
-            <div class="d-flex">
-                <ul id="items" class="list-group">
-                    <li class="list-group-item ">
+            <div class="tabela">
+                <ul id="items" class="filtroItem">
+                    <li>Itens</li>
+                    <li class="">
                         Arroz
                     </li>
                 </ul>
-                <ul id="value" class="list-group">
-                    <li class="list-group-item ">R$20,00</li>
+                <ul id="value" class="filtroPreco">
+                    <li>Valor</li>
+                    <li class="">R$20,00</li>
                 </ul>
-                <ul id="amount" class="list-group">
-                    <li class="list-group-item">1</li>
+                
+                <ul id="amount" class="filtroQuantidade">
+                    <li>Quantidade</li>
+                    <li class="">1</li>
                 </ul>
 
             </div>

@@ -1,0 +1,25 @@
+.tabela {
+ display: flex;
+ justify-content: space-between; 
+ background-color: aliceblue;
+    
+}
+
+.tabela ul {
+    width: 34%;
+    list-style: none;
+    
+}
+
+.tabela ul li{
+width: 100%;
+}
+.tabela ul li:nth-child(1) {
+    background-color: beige;
+    text-align: center;
+}
+
+li {
+    border: 1px solid black;
+    text-align: center;
+}
