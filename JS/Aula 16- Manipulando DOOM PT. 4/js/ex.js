@@ -2,23 +2,20 @@
 const btn = document.querySelector(".btn");
 btn.style.background = "red";
 
-//Adição da Idade
-const data = new Date();   
-const dia = data.getDate();   
-const mes = data.getMonth();  
-const ano4 = data.getFullYear();   
-const str_data = dia + '/' + (mes + 1) + '/' + ano4;   
+
 
 // Adicionando elementos
+const data = new Date();   
 const myForm = document.querySelector("#my-form");
 const nameInput = document.querySelector("#name");
 const emailInput = document.querySelector("#email");
-const idadeInput = document.querySelector("#idadeA");
+const date = document.querySelector("date");
 const maiorOuMenor = document.querySelector("#maiorOuMenor");
 const msg_email = document.querySelector(".msg_email");
 const userList = document.querySelector("#users");
 const msg = document.querySelector(".msg");
 const msg_idade = document.querySelector(".msg_idade")
+
 
 // Adicionando ação do botão
 myForm.addEventListener("submit", onSubmit);
@@ -27,7 +24,7 @@ myForm.addEventListener("submit", onSubmit);
 function onSubmit(e) {
   e.preventDefault();
   if (
-    nameInput.value === "" || emailInput.value === "" || idadeInput.value === "") {
+    nameInput.value === "" || emailInput.value === "" || date.value === "") {
     // alert('Por favor, preencha os dados.');
     msg.classList.add("error");
     msg.innerHTML = "Por favor, preencha os dados.";
@@ -37,14 +34,14 @@ function onSubmit(e) {
     const li = document.createElement("li");
     li.appendChild(
     document.createTextNode(
-        `Seu nome; "${nameInput.value}".  Seu Email; "${emailInput.value}". Sua idade; "${idadeInput.value}". É maior de idade? "${maiorOuMenor.value}"`
+        `Seu nome; "${nameInput.value}".  Seu Email; "${emailInput.value}". Sua idade; "${date.value}". É maior de idade? "${maiorOuMenor.value}"`
       )
     );
     userList.appendChild(li);
     // Limpa o formulário
     nameInput.value = "";
     emailInput.value = "";
-    idadeInput.value = "";
+    date.value = "";
     maiorOuMenor.getElementsByTagName("option")[0].selected = "selected";
     nameInput.focus(); //Coloca o foco no elmento
   }
@@ -68,16 +65,15 @@ emailInput.addEventListener("change", (e) => {
   }
 };
 
-function confirmandoIdade() {
-  let age = new Date(idadeInput.value)
-  let idade = data.getFullYear() - age.getFullYear();
-  if (data.getMonth() < age.getMonth()) idade--;
-  else if (data.getMonth() == age.getMonth() && data.getDate() < age.getDate() + 1) idade--;
-
-  // Validando a idade
+function verifData() {
+  let get = new Date(date.value);
+  let idade = dob.getFullYear() - get.getFullYear();
+  if (dob.getMonth() < get.getMonth()) idade--;
+  else if (dob.getMonth() == get.getMonth() && dob.getDate() < get.getDate)
+      idade--;
   if (idade < 18) {
-      alert('Você é menor de idade.\nEsse site é só para maiores de 18 anos');
-      return false;
+      alert('Menores de 18 não pode comprar ingresso');
+  } else {
+      vData = true;
   }
-  return true;
 }

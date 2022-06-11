@@ -1,32 +1,89 @@
+function calcularTabuada ()
+{
+    let sectionTabuada = document.getElementById( "calcular-tabuada" );
+    let sectionTitle = document.createElement( "h2" );
+    let tabuada = parseInt( prompt( "Insira um número:" ) );
 
+    // Verificar se o número é válido
+    if ( isNaN( number ) )
+    {
+        alert( "Valor inválido" );
+        return;
+    }
 
-let section = document.createElement('section');
-document.body.appendChild(section);
-let article = document.createElement('article');
-document.body.appendChild(article);
-let h1z = document.createElement('h1')
-h1z.innerHTML ='Ratattuile';
-let pa = document.createElement('p');
-pa.innerHTML = 'Filme Bom';
-article.appendChild(h1z)
-article.appendChild(pa);
-let h1c = document.createElement('h1')
-h1c.innerHTML = 'Ta dando onda';
-let pa2 = document.createElement ('p')
-pa2.innerHTML = 'Filme bom tá'
-section.appendChild(h1c)
-section.appendChild(pa2);
+    // Adicionar título e tabuada
+    sectionTitle.innerText = `Tabuada de: ${tabuada}`;
+    sectionTabuada.appendChild( sectionTitle );
 
+    for ( let i = 1; i <= 10; i ++ )
+    {
+        let paragraph = document.createElement( "p" );
+        paragraph.innerText = `${tabuada} X ${i} = ${tabuada * i}`;
+        sectionTabuada.appendChild( paragraph );
+    }
+}
 
+function mostrarImagem ()
+{
+    let sectionUmbrella = document.getElementById( "umbrella-academy" );
+    let sectionTitle = document.createElement( "h2" );
+    let umbrellaImage = document.createElement( "img" );
 
+    // Checar se já existem imagens
+    let imagemAtual = sectionUmbrella.getElementsByTagName( "img" );
+    if ( imagemAtual.length ) return;
 
+    // Adicionar título e imagem
+    sectionTitle.innerText = "Umbrella Academy";
+    umbrellaImage.src = "./img/umbrella.jpg";
+    umbrellaImage.style.maxWidth = "50%";
+    sectionUmbrella.appendChild( sectionTitle );
+    sectionUmbrella.appendChild( umbrellaImage );
 
+    document.body.style.backgroundColor = "#262525";
+    document.body.style.color = "#FFFFFF";
+}
 
+function mostrarNome ()
+{
+    let sectionNome = document.getElementById( "nome-usuario" );
+    let sectionTitle = document.createElement( "h2" );
+    let paragraphNome = document.createElement( "p" );
+    let Usuario = prompt( "Insira seu nome:" ).trim().replace( /\s+/, " " ) || "Usuário";
 
+    // Checar se já existe um nome
+    let tituloAtual = sectionNome.getElementsByTagName( "h2" );
+    let nomeAtual = sectionNome.getElementsByTagName( "p" );
 
+    if ( nomeAtual.length )
+    {
+        tituloAtual[0].remove();
+        nomeAtual[0].remove();
+    }
 
+    // Adicionar título e nome
+    sectionTitle.innerText = "Nome do usuário";
+    paragraphNome.innerText = `Olá ${Usuario}, bem-vindo à academia!`;
+    sectionNome.appendChild( sectionTitle );
+    sectionNome.appendChild( paragraphNome );
+}
 
+// Botões
+const buttons = document.getElementsByClassName( "B_12" );
+const buttonUmbrella = document.getElementById( "B_01" );
+const buttonNome = document.getElementById( "B_02" );
+const buttonTabuada = document.getElementById( "B_03" );
 
+// Estilizar botões
+for ( let i = 0; i < buttons.length; i ++ )
+{
+    buttons[i].style.backgroundColor = "#BFBFBF";
+    buttons[i].style.border = "solid 1px #D9BC66";
+    buttons[i].style.padding = "0.5rem";
+    buttons[i].style.margin = "0.7rem";
+}
 
-console.log(window);
-alert(`  Boa noite! Seja Bem-vindo, o nome da nossa pagina é = ${document.title = 'To Maluco'} ` );
+// Adicionar funcionalidades aos botões
+buttonUmbrella.addEventListener( "click", mostrarImagem );
+buttonNome.addEventListener( "click", mostrarNome );
+buttonTabuada.addEventListener( "click", calcularTabuada );
